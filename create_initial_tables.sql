@@ -23,9 +23,8 @@ departments                  |  |  |  employees_projects
 ##Creating tables to practice
 
 CREATE SCHEMA coder_pad_practice;
-##
-DROP TABLE if exists coder_pad_practice.employees;
 
+DROP TABLE if exists coder_pad_practice.employees;
 CREATE TABLE coder_pad_practice.employees
 (
 	id INT not null,
@@ -45,6 +44,7 @@ VALUES
     ('6','John','Mills','50000','3')
 ;
 
+DROP TABLE if exists coder_pad_practice.departments;
 CREATE TABLE coder_pad_practice.departments
 (
 	id int not null,
@@ -60,6 +60,7 @@ VALUES
     ('5','Silly Walks')
 ;
 
+DROP TABLE if exists coder_pad_practice.projects;
 CREATE TABLE coder_pad_practice.projects
 (
 	id INT not null,
@@ -77,11 +78,12 @@ VALUES
 	('3','Design 3 New Silly Walks','2009-05-11','2009-08-19','100')
 ;
 
+DROP TABLE if exists coder_pad_practice.employees_projects;
 CREATE TABLE coder_pad_practice.employees_projects
 (
 
 	project_id int not null,
-    customer_id int not null
+    employee_id int not null
 
 );
 
@@ -92,3 +94,4 @@ VALUES
     ('1','3'),
     ('1','4'),
     ('1','5')
+;
