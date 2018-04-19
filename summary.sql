@@ -87,10 +87,3 @@ SELECT count(*) FROM coder_pad_practice.employees_projects;
 |        5 |
 +----------+
 */
-
-########Add in some fields of use
-INSERT INTO employees e
-SELECT
-concat(e.first_name,"",e.last_name) as full_name
-FROM employees
-;
