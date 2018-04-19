@@ -79,7 +79,7 @@ SELECT count(*) FROM coder_pad_practice.projects;
 +----------+
 */
 
-SELECT count(*) FROM coder_pad_practice.employees_projects
+SELECT count(*) FROM coder_pad_practice.employees_projects;
 /*
 +----------+
 | count(*) |
